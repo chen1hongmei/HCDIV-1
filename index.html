@@ -47,9 +47,6 @@
 <h4 id="timestring" style="text-align:center;"></h4>
 <h4 id="validTo" style="text-align:center;"></h4>
 
-<!-- Search bar to filter the table -->
-<input type="text" id="searchInput" onkeyup="filterTable()" placeholder="Search for area..." />
-
 <!-- Table to display the weather data -->
 <table id="weatherTable" align="center">
   <tr>
@@ -72,10 +69,6 @@
       // Display the last updated time
       let timestring = document.getElementById('timestring');
       timestring.innerHTML = "Last updated at: " + new Date(timestamp).toLocaleString();
-
-      // Display the valid to time
-      let validToString = document.getElementById('validTo');
-      validToString.innerHTML = "Valid until: " + new Date(validTo).toLocaleString();
 
       // Reference to the weather table
       let weatherTable = document.getElementById('weatherTable');
